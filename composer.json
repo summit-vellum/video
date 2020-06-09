@@ -1,0 +1,26 @@
+{
+    "name": "quill/video",
+    "description": "videos",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gien Mangaliman",
+            "email": "gien.mangaliman@summitmedia.com.ph"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Quill\\Video\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Quill\\Video\\VideoServiceProvider"
+            ]
+        }
+    }
+}
