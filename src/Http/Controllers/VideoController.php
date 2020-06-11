@@ -196,6 +196,7 @@ class VideoController extends BaseController
 	    	$video_id = $this->extractYoutubeId($url);
 		    //$api_key = ENV('GOOGLE_API_KEY');
 		    // temporary api key.
+
 	    	$api_key = "AIzaSyBeIAelUoCPMVEVxyTncNZH7yB5mu3i7Yo";
 		    $data = json_decode(file_get_contents("https://www.googleapis.com/youtube/v3/videos?key=".$api_key."&part=snippet&id=".$video_id), true);
 			$items = array_shift($data['items']);
