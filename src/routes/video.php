@@ -12,7 +12,5 @@
 */
 
 Route::group(['middleware' => 'web'], function() {
-
-    // ... Route logic goes here
-
+    Route::resource('/video/library', '\Quill\Video\Http\Controllers\VideoController');
 });
